@@ -58,3 +58,8 @@ buck-out/
 *.jks
 *.mobileprovision
 *.p12
+*.app
+*.apk
+*.android.bundle
+
+tests/target/*

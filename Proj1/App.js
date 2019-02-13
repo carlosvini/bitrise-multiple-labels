@@ -22,8 +22,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>This is the first Project</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.welcome}accessibilityLabel="text1">This is the ONE Project</Text>
+        <Text style={styles.instructions} accessibilityLabel="text2">To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
