@@ -69,7 +69,8 @@ exports.config = {
         // absolute path to the apk goes here ^, I'm keeping it at
         // root directory of this test project.
         noReset: true,
-        newCommandTimeout: 240
+        newCommandTimeout: 240,
+        uiautomator2ServerInstallTimeout: 40000
     }],
     //
     // ===================
