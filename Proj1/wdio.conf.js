@@ -70,7 +70,7 @@ exports.config = {
         // root directory of this test project.
         noReset: true,
         newCommandTimeout: 240,
-        uiautomator2ServerInstallTimeout: 40000
+        uiautomator2ServerInstallTimeout: 80000
     }],
     //
     // ===================
