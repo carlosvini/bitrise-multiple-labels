@@ -21,7 +21,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
+      <View testID="app-root" style={styles.container}>
         <Text style={styles.welcome}accessibilityLabel="text1">This is the ONE Project</Text>
         <Text style={styles.instructions} accessibilityLabel="text2">To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
