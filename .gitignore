@@ -63,3 +63,4 @@ buck-out/
 *.android.bundle
 
 tests/target/*
+Proj1/android/app/release/output.json
