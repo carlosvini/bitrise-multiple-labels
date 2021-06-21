@@ -65,7 +65,7 @@ exports.config = {
         platformVersion: "8.1", // Android version of Simulator
         orientation: "PORTRAIT",
         maxInstances: 1,
-        app: join(process.cwd(), "/android/app/release/Proj1-release.apk"),
+        app: join(process.cwd(), "/android/app/release/Proj1-release5.apk"),
         // absolute path to the apk goes here ^, I'm keeping it at
         // root directory of this test project.
         noReset: true,

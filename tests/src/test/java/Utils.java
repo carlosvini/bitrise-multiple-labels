@@ -35,9 +35,9 @@ public class Utils {
     static EnhancedAndroidDriver<MobileElement> getAndroidDriver()  throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
+        desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
-        desiredCapabilities.setCapability(MobileCapabilityType.APP, "/Users/diego/Sites/tests-appium/Proj1.apk");
+        desiredCapabilities.setCapability(MobileCapabilityType.APP, "/Users/carlos/Sites/bitrise-multiple-labels/Proj1/android/app/release/Proj1-release.apk");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 
         URL remoteUrl = new URL("http://localhost:4723/wd/hub");
