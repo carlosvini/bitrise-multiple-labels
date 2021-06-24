@@ -1077,10 +1077,10 @@
   dependencies:
     serve-static "^1.13.1"
 
-"@react-native-community/cli-platform-android@^3.0.0-alpha.1":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-3.1.4.tgz#61f964dc311623e60b0fb29c5f3732cc8a6f076f"
-  integrity sha512-ClSdY20F0gzWVLTqCv7vHjnUqOcuq10jd9GgHX6lGSc2GI+Ql3/aQg3tmG4uY3KXNNwAv3U8QCoYgg1WGfwiHA==
+"@react-native-community/cli-platform-android@3.0.2", "@react-native-community/cli-platform-android@^3.0.0-alpha.1":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-3.0.2.tgz#258aebfd65041649dabb2d13ef8f43b109d59e61"
+  integrity sha512-AVw1o+v85i9xG8Cbga6cGokbgLV+Wf+m3S/DqatBUAcZIWH/MUsr4m7GLJadprm7vK6ksRkwdznV1nxWJ+o0xg==
   dependencies:
     "@react-native-community/cli-tools" "^3.0.0"
     chalk "^2.4.2"
