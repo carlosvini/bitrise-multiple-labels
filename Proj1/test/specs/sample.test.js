@@ -3,7 +3,7 @@
 // https://webdriver.io/docs/api.html
 describe("Running a sample test", () => {
     beforeEach(() => {
-        $("~app-root").waitForDisplayed(11000, false)
+        $("~app-root").waitForDisplayed({ timeout: 30000 })
     });
 
     it("Text is correct", () => {
