@@ -4,7 +4,7 @@ orbs:
   android: circleci/android@1.0.3
 
 jobs:
-  checkout:
+  git-clone:
     executor:
       name: android/android-machine
     steps:
@@ -90,5 +90,6 @@ jobs:
 workflows:
   sample:
     jobs:
+      - git-clone
       - build-and-test-android
       #- build-and-test-ios
