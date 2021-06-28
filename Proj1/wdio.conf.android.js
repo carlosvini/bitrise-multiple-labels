@@ -60,7 +60,7 @@ exports.config = {
         // browserName: 'Android',
         platformName: 'Android',
         // platformVersion: '10',
-        deviceName: 'Pixel_2_API_30', // This is name of your Simulator
+        deviceName: 'Pixel_2_API_29', // This is name of your Simulator
         app: process.env.BITRISE_SIGNED_APK_PATH || `${__dirname}/android/app/build/outputs/apk/debug/app-debug.apk`,
         // appWaitActivity: 'com.proj1.MainActivity',
         // noReset: true,
