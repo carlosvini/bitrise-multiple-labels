@@ -4,6 +4,12 @@ orbs:
   android: circleci/android@1.0.3
 
 jobs:
+  checkout:
+    executor:
+      name: android/android-machine
+    steps:
+      - checkout
+
   build-and-test-android:
     executor:
       name: android/android-machine
@@ -11,7 +17,6 @@ jobs:
     working_directory: Proj1
 
     steps:
-      - checkout
 
       - run:
           name: Node 14 Repo
