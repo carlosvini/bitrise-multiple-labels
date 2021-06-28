@@ -23,6 +23,10 @@ jobs:
           name: Install Yarn
           command: 'sudo npm install -g yarn'
 
+      - run:
+          name: Enter Proj1
+          command: 'cd Proj1'
+
       - restore_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
 
