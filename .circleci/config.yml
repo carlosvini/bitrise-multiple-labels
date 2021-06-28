@@ -4,24 +4,19 @@ orbs:
   android: circleci/android@1.0.3
 
 jobs:
-  git-clone:
-    executor:
-      name: android/android-machine
-    steps:
-      - checkout
-
   build-and-test-android:
     executor:
       name: android/android-machine
-
-    working_directory: Proj1
+    working_directory: ~/project/Proj1
 
     steps:
+      - checkout:
+          path: ~/project
 
       - run:
           name: Node 14 Repo
           command: 'curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -'
-
+          
       - run:
           name: Install Node
           command: 'sudo apt-get install -y nodejs'
@@ -90,6 +85,5 @@ jobs:
 workflows:
   sample:
     jobs:
-      - git-clone
       - build-and-test-android
       #- build-and-test-ios
