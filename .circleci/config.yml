@@ -53,7 +53,7 @@ jobs:
           post-emulator-launch-assemble-command: ''
 
       - android/run-tests:
-          test-command: yarn test:android
+          test-command: yarn test:run:android
 
   build-and-test-ios:
     macos:
