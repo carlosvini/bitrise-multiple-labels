@@ -4,11 +4,14 @@
  *
  * @format
  * @flow
- * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+ import React from 'react';
+ import {
+   StyleSheet,
+   View,
+   Text,
+ } from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -17,18 +20,17 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
+const App: () => React$Node = () => {
     return (
-      <View style={styles.container}>
+     <>
+       <View style={styles.container}>
         <Text style={styles.welcome}>This is the second Project</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
+     </>
     );
-  }
-}
+ };
 
 const styles = StyleSheet.create({
   container: {
@@ -48,3 +50,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+ export default App;
