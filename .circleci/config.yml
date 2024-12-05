@@ -85,5 +85,5 @@ jobs:
 workflows:
   sample:
     jobs:
-      - build-and-test-android
-      #- build-and-test-ios
+      #- build-and-test-android
+      - build-and-test-ios
